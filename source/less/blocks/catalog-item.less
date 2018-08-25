@@ -21,12 +21,22 @@
       text-decoration: line-through;
     }
   }
+  &--last {
+    @media (max-width: @desktop-width) {
+      .hidden();
+    }
+  }
   @media (min-width: @tablet-width) {
     width: 345px;
     margin-bottom: 30px;
 
     &:nth-child(odd) {
       margin-right: 30px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &:first-child {
+      float: left;
     }
   }
 }
