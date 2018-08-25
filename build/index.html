@@ -30,8 +30,8 @@
           <li class="menu-options__item">
             <form class="currency" action="#" method="post">
               <select name="currency">
-                <option value="Rubles">Рубли</option>
-                <option value="Dollars">Доллары</option>
+                <option value="Rubles">Рубль</option>
+                <option value="Dollars">Доллар</option>
                 <option value="Euro">Евро</option>
               </select>
             </form>
@@ -67,46 +67,64 @@
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="catalog__title">Каталог круизов</h2>
-          <span class="catalog__sort">Сортировать круизы по<button class="catalog__sort--by">цене</button></span>
-          <article class="catalog__item catalog-item">
-            <img class="catalog-item__img" src="#" alt="Анапа">
-            <a class="catalog-item__more" href="#">Морской круиз в Анапу</a>
-            <p class="catalog-item__info">
-              <b>Маршрут:</b> Сочи-Лазаревское-Геленджик-Анапа
-              <b>Продолжительность:</b> 10ч. 0мин.
-            </p>
-            <span class="catalog-item__price">49 000 руб.</span>
-          </article>
-          <article class="catalog__item catalog-item">
-            <img class="catalog-item__img" src="#" alt="Морская прогулка">
-            <a class="catalog-item__more" href="#">Обзорная морская прогулка с экскурсией</a>
-            <p class="catalog-item__info">
-              <b>Маршрут:</b> Сочи-Адлер-Сочи (без высадки)
-              <b>Продолжительность:</b> 1ч. 0мин.
-            </p>
-            <span class="catalog-item__price">5 000 руб.</span>
-            <span class="catalog-item__price--old">15 000 руб.</span>
-          </article>
-          <article class="catalog__item catalog-item">
-            <img class="catalog-item__img" src="#" alt="Геленджик">
-            <a class="catalog-item__more" href="#">Морская прогулка в Геленджик</a>
-            <p class="catalog-item__info">
-              <b>Маршрут:</b> Сочи-Туапсе-Геленджик
-              <b>Продолжительность:</b> 12ч. 30мин.
-            </p>
-            <span class="catalog-item__price">7 000 руб.</span>
-            <span class="catalog-item__price--old">10 000 руб.</span>
-          </article>
-          <article class="catalog__item catalog-item">
-            <img class="catalog-item__img" src="#" alt="Новороссийск">
-            <a class="catalog-item__more" href="#">Морской круиз в Новороссийск</a>
-            <p class="catalog-item__info">
-              <b>Маршрут:</b> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи
-              <b>Продолжительность:</b> 13ч. 0мин.
-            </p>
-            <span class="catalog-item__price">14 800 руб.</span>
-          </article>
-            <button class="catalog__load-more">Больше круизов</button>
+          <form class="catalog__sort" action="#" method="post">Сортировать круизы по
+            <select name="sort-cruises-by">
+              <option value="price">цене</option>
+              <option value="date">дате</option>
+            </select>
+          </form>
+
+          <div class="catalog-items">
+            <article class="catalog__item catalog-item">
+              <img class="catalog-item__img" src="#" alt="Анапа">
+              <a class="catalog-item__more" href="#">Морской круиз в Анапу</a>
+              <p class="catalog-item__info">
+                <b>Маршрут:</b> Сочи-Лазаревское-Геленджик-Анапа
+              </p>
+              <p class="catalog-item__info">
+                <b>Продолжительность:</b> 10ч. 0мин.
+              </p>
+              <span class="catalog-item__price">49 000 руб.</span>
+            </article>
+            <article class="catalog__item catalog-item">
+              <img class="catalog-item__img" src="#" alt="Морская прогулка">
+              <a class="catalog-item__more" href="#">Обзорная морская прогулка с экскурсией</a>
+              <p class="catalog-item__info">
+                <b>Маршрут:</b> Сочи-Адлер-Сочи (без высадки)
+              </p>
+              <p class="catalog-item__info">
+                <b>Продолжительность:</b> 1ч. 0мин.
+              </p>
+              <span class="catalog-item__price">5 000 руб.</span>
+              <span class="catalog-item__price--old">15 000 руб.</span>
+            </article>
+            <article class="catalog__item catalog-item">
+              <img class="catalog-item__img" src="#" alt="Геленджик">
+              <a class="catalog-item__more" href="#">Морская прогулка в Геленджик</a>
+              <p class="catalog-item__info">
+                <b>Маршрут:</b> Сочи-Туапсе-Геленджик
+              </p>
+              <p class="catalog-item__info">
+                <b>Продолжительность:</b> 12ч. 30мин.
+              </p>
+              <span class="catalog-item__price">7 000 руб.</span>
+              <span class="catalog-item__price--old">10 000 руб.</span>
+            </article>
+            <article class="catalog__item catalog-item">
+              <img class="catalog-item__img" src="#" alt="Новороссийск">
+              <a class="catalog-item__more" href="#">Морской круиз в Новороссийск</a>
+              <p class="catalog-item__info">
+                <b>Маршрут:</b> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи
+              </p>
+              <p class="catalog-item__info">
+                <b>Продолжительность:</b> 13ч. 0мин.
+              </p>
+              <span class="catalog-item__price">14 800 руб.</span>
+            </article>
+          </div>
+
+          <button class="catalog__load-more">Больше круизов</button>
+
         </div>
       </section>
     </main>
@@ -127,11 +145,13 @@
           <a class="social__youtube" href="#" aria-label="youtube"></a>
           <a class="social__instagram" href="#" aria-label="instagram"></a>
         </div>
-        <p class="page-footer__contacts contacts">
-          <span class="contacts__phone">8 800 500-61-05</span>
-          <span class="contacts__support">Круглосуточная поддержка</span>
-        </p>
-        <p class="page-footer__copyright copyright">&copy 2016 OOO «Городские Круизы»</p>
+        <div class="credentials">
+          <p class="page-footer__contacts contacts">
+            <span class="contacts__phone">8 800 500-61-05</span>
+            <span class="contacts__support">Круглосуточная поддержка</span>
+          </p>
+          <p class="page-footer__copyright copyright">&copy 2016 OOO «Городские Круизы»</p>
+        </div>
       </div>
     </footer>
 
