@@ -366,8 +366,9 @@ body {
   }
 }
 @media (min-width: 1670px) {
-  .catalog-item:first-child {
-    float: left;
+  .catalog-item {
+    width: 555px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1300px) {
@@ -384,16 +385,10 @@ body {
         flex-wrap: wrap;
   }
 }
-.catalog-items__offers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media (min-width: 1670px) {
+  .catalog-items {
+    width: 1140px;
+  }
 }
 .catalog {
   background-color: #f3f3f3;
