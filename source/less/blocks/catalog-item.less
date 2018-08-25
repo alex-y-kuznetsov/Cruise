@@ -37,5 +37,13 @@
   @media (min-width: @desktop-width) {
     width: 555px;
     margin-bottom: 20px;
+
+    &:first-child {
+      position: absolute;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-left: 585px;
+    }
   }
 }

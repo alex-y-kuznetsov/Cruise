@@ -370,6 +370,13 @@ body {
     width: 555px;
     margin-bottom: 20px;
   }
+  .catalog-item:first-child {
+    position: absolute;
+  }
+  .catalog-item:nth-child(2),
+  .catalog-item:nth-child(3) {
+    margin-left: 585px;
+  }
 }
 @media (min-width: 1300px) {
   .catalog-items {
@@ -388,6 +395,7 @@ body {
 @media (min-width: 1670px) {
   .catalog-items {
     width: 1140px;
+    position: relative;
   }
 }
 .catalog {
