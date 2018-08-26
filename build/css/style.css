@@ -466,6 +466,10 @@ body {
 }
 .intro {
   background-color: #cce1fc;
+  background-repeat: no-repeat;
+  background-image: url("../img/intro-background-mobile.jpg");
+  margin-top: -110px;
+  padding-top: 110px;
 }
 .intro__wrapper {
   width: 100%;
@@ -484,6 +488,18 @@ body {
 @media (min-width: 1670px) {
   .intro__wrapper {
     width: 1140px;
+  }
+}
+@media (min-width: 1300px) {
+  .intro {
+    background-image: url("../img/intro-background-tablet.jpg");
+    margin-top: -119px;
+    padding-top: 119px;
+  }
+}
+@media (min-width: 1670px) {
+  .intro {
+    background-image: url("../img/intro-background-desktop.jpg");
   }
 }
 .intro__wrapper {
