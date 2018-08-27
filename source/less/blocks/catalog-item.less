@@ -4,6 +4,7 @@
   margin-bottom: 20px;
   background-color: #FFFFFF;
   min-height: 465px;
+  position: relative;
 
   & *:not(:nth-child(1)) {
     padding-left: 23px;
@@ -38,6 +39,22 @@
       opacity: 0.5;
       text-decoration: line-through;
       padding-left: 10px;
+    }
+  }
+  &__label {
+    margin: 0;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 10px;
+    top: -7px;
+    background-color: #f20542;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+
+    &--hin {
+      background-color: #33c7fd;
     }
   }
   &--last {
