@@ -1,19 +1,29 @@
 .catalog-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+
+  & *:not(:nth-child(1)) {
+    padding-left: 23px;
+  }
   &__more {
-    font-size: 18px;
+    font-size: 19px;
     color: #00a2dd;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 8px;
   }
   &__info {
     font-family: "Raleway", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
     margin: 0;
   }
   &__price {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 48px;
+    padding-top: 5px;
+    padding-bottom: 36px;
 
     &--old {
       font-size: 18px;
