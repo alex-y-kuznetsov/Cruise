@@ -341,27 +341,27 @@ body {
   min-height: 465px;
   position: relative;
 }
-.catalog-item *:not(:nth-child(1)) {
-  padding-left: 23px;
-}
 .catalog-item__more {
   font-size: 19px;
   color: #00a2dd;
   text-decoration: none;
   padding-top: 25px;
   padding-bottom: 8px;
+  padding-left: 23px;
 }
 .catalog-item__info {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
   margin: 0;
+  padding-left: 23px;
 }
 .catalog-item__price {
   font-size: 32px;
   line-height: 48px;
   margin-top: auto;
   padding-bottom: 36px;
+  padding-left: 23px;
 }
 .catalog-item__price--seacruise {
   padding-bottom: 29px;
@@ -387,7 +387,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.catalog-item__label--hin {
+.catalog-item__label--hit {
   background-color: #33c7fd;
 }
 @media (max-width: 1670px) {
@@ -493,6 +493,7 @@ body {
   cursor: pointer;
 }
 .catalog__load-more {
+  display: block;
   margin: 0 auto;
   padding: 16px 43px 15px 33px;
 }
