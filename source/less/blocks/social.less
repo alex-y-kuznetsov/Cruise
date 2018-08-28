@@ -1,6 +1,35 @@
 .social {
   &__be-with-us {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  &__links {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+  }
+  &__link {
+    background-color: #0d3351;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--vk {
+      background-image: url("../img/vk.png");
+    }
+    &--ok {
+      background-image: url("../img/ok.png");
+    }
+    &--youtube {
+      background-image: url("../img/yt.png");
+    }
+    &--instagram {
+      background-image: url("../img/insta.png");
+    }
   }
 }

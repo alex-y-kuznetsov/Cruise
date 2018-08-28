@@ -510,13 +510,14 @@ body {
 }
 .contacts__phone {
   font-weight: 800;
-  font-size: 14px;
+  font-size: 16px;
+  padding-bottom: 5px;
 }
 .contacts__support {
-  font-size: 10px;
+  font-size: 11.3px;
 }
 .copyright {
-  font-size: 14px;
+  font-size: 15.5px;
   line-height: 24px;
   margin: 0;
 }
@@ -714,6 +715,13 @@ body {
             justify-content: space-between;
   }
 }
+.page-footer__social {
+  padding-top: 23px;
+  padding-bottom: 17px;
+}
+.page-footer__contacts {
+  padding-bottom: 8px;
+}
 .page-header {
   padding-top: 27px;
   padding-bottom: 65px;
@@ -749,8 +757,40 @@ body {
   }
 }
 .social__be-with-us {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
+  display: block;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.social__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.social__link {
+  background-color: #0d3351;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social__link--vk {
+  background-image: url("../img/vk.png");
+}
+.social__link--ok {
+  background-image: url("../img/ok.png");
+}
+.social__link--youtube {
+  background-image: url("../img/yt.png");
+}
+.social__link--instagram {
+  background-image: url("../img/insta.png");
 }
 @media (max-width: 1300px) {
   .submenu {
