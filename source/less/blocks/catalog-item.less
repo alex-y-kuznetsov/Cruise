@@ -7,12 +7,24 @@
   position: relative;
 
   &__more {
-    font-size: 19px;
+    font-size: 19.3px;
     color: #00a2dd;
     text-decoration: none;
     padding-top: 25px;
     padding-bottom: 8px;
     padding-left: 23px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 5px;
+      height: 8px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url("../img/triangle-right.png");
+      margin-left: 10px;
+      bottom: 13px;
+    }
   }
   &__info {
     font-family: "Raleway", Arial, sans-serif;
@@ -45,16 +57,41 @@
     margin: 0;
     position: absolute;
     width: 90px;
-    height: 90px;
-    right: 10px;
+    height: 75px;
+    right: 23px;
     top: -7px;
     background-color: #f20542;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 27px;
 
+    &::after {
+      content: "";
+      position: relative;
+      bottom: -5px;
+      width: 0;
+      height: 0;
+      border-width: 5px 45px 15px;
+      border-style: solid;
+      border-color: #f20542 #f20542 transparent;
+    }
     &--hit {
       background-color: #33c7fd;
+
+      &::after {
+        border-color: #33c7fd #33c7fd transparent;
+      }
+    }
+    &--special {
+      padding-top: 35px;
+
+      &::after {
+        bottom: -15px;
+      }
     }
   }
   &--last {
