@@ -4,7 +4,10 @@
   background-repeat: no-repeat;
   background-position:
     center 26px,
-    center;
+    center bottom;
+  background-size:
+    auto,
+    cover;
   background-image:
     url("../img/logo.png"),
     url("../img/intro-background-mobile.jpg");
@@ -13,12 +16,16 @@
   padding-bottom: 207px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/intro-background-tablet.jpg");
-    margin-top: -119px;
-    padding-top: 119px;
+    background-image:
+      url("../img/logo.png"),
+      url("../img/intro-background-tablet.jpg");
+    margin-top: -127px;
+    padding-top: 127px;
   }
   @media (min-width: @desktop-width) {
-    background-image: url("../img/intro-background-desktop.jpg");
+    background-image:
+      url("../img/logo.png"),
+      url("../img/intro-background-desktop.jpg");
   }
 
   &__wrapper {
