@@ -20,8 +20,7 @@
         <ul class="page-header__menu-options menu-options">
           <li class="menu-options__item">
             <form class="login" action="#" method="post">
-              <span>Личный кабинет</span>
-              <button aria-label="open-menu"></button>
+              <a href="#" class="login__dropdown">Личный кабинет</a
               <input type="text" placeholder="Логин" name="login-field">
               <input type="text" placeholder = "Пароль" name="password-field">
               <input type="submit" value="Войти" name="login-button">
@@ -29,7 +28,7 @@
           </li>
           <li class="menu-options__item">
             <form class="currency" action="#" method="post">
-              <select name="currency">
+              <select class="menu-options__page-options" name="currency">
                 <option value="Rubles">Рубль</option>
                 <option value="Dollars">Доллар</option>
                 <option value="Euro">Евро</option>
@@ -38,7 +37,7 @@
           </li>
           <li class="menu-options__item">
             <form class="language" action="#" menthd="post">
-              <select name="language">
+              <select class="menu-options__page-options" name="language">
                 <option value="russian">Ru</option>
                 <option value="english">Eng</option>
               </select>
