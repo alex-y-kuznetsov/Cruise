@@ -436,10 +436,21 @@ body {
 @media (min-width: 1300px) {
   .catalog-item {
     width: 345px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .catalog-item:nth-child(odd) {
     margin-right: 30px;
+  }
+  .catalog-item__label {
+    right: 31px;
+  }
+  .catalog-item__more {
+    padding-left: 31px;
+    padding-top: 22px;
+    padding-bottom: 6px;
+  }
+  .catalog-item__info {
+    padding-left: 33px;
   }
 }
 @media (min-width: 1670px) {
@@ -531,6 +542,17 @@ body {
   margin: 0 auto;
   padding: 16px 43px 15px 33px;
 }
+@media (min-width: 1300px) {
+  .catalog {
+    padding-top: 55px;
+  }
+  .catalog__title {
+    font-size: 28px;
+  }
+  .catalog__sort {
+    padding-bottom: 31px;
+  }
+}
 .contacts {
   margin: 0;
   display: -webkit-box;
@@ -551,10 +573,20 @@ body {
   font-size: 11.3px;
   font-family: "Raleway", Arial, sans-serif;
 }
+@media (min-width: 1300px) {
+  .contacts {
+    text-align: left;
+  }
+}
 .copyright {
   font-size: 15.5px;
   line-height: 24px;
   margin: 0;
+}
+@media (min-width: 1300px) {
+  .currency {
+    margin-right: 20px;
+  }
 }
 .intro {
   background-color: #cce1fc;
@@ -590,6 +622,8 @@ body {
 @media (min-width: 1300px) {
   .intro {
     background-image: url("../img/logo.png"), url("../img/intro-background-tablet.jpg");
+    background-position: center 143px,
+      center bottom;
     margin-top: -127px;
     padding-top: 127px;
   }
@@ -647,6 +681,19 @@ body {
   height: 220px;
   background-repeat: no-repeat;
   background-image: url("../img/tracks.svg");
+}
+@media (min-width: 1300px) {
+  .intro__header {
+    font-size: 70px;
+    font-weight: 400;
+    padding-top: 104px;
+    width: 725px;
+    padding-bottom: 28px;
+  }
+  .intro__header--small {
+    font-size: 28px;
+    padding-bottom: 22px;
+  }
 }
 .login input {
   display: none;
@@ -721,6 +768,7 @@ body {
     background-color: transparent;
     cursor: pointer;
     font-size: 14px;
+    font-family: "Raleway", Arial, sans-serif;
   }
 }
 .page-body {
@@ -813,6 +861,9 @@ body {
   }
   .page-header__menu-button {
     top: 5px;
+  }
+  .page-header__menu-options li:last-child {
+    margin-left: auto;
   }
 }
 .social__be-with-us {

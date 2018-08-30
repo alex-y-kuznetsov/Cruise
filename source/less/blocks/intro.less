@@ -19,6 +19,9 @@
     background-image:
       url("../img/logo.png"),
       url("../img/intro-background-tablet.jpg");
+    background-position:
+      center 143px,
+      center bottom;
     margin-top: -127px;
     padding-top: 127px;
   }
@@ -65,7 +68,20 @@
       background-image: url("../img/tracks.svg");
     }
   }
+  @media (min-width: @tablet-width) {
+    &__header {
+      font-size: 70px;
+      font-weight: 400;
+      padding-top: 104px;
+      width: 725px;
+      padding-bottom: 28px;
 
+      &--small {
+        font-size: 28px;
+        padding-bottom: 22px;
+      }
+    }
+  }
 }
 
 
