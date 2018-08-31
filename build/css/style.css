@@ -461,8 +461,11 @@ body {
     padding-top: 5px;
   }
   .catalog-item__price--novorossiysk {
-    padding-top: 7px;
-    padding-bottom: 34px;
+    padding-top: 10px;
+    padding-bottom: 31px;
+  }
+  .catalog-item__price--gelendzhik {
+    padding-bottom: 27px;
   }
 }
 @media (min-width: 1670px) {
@@ -552,11 +555,12 @@ body {
 .catalog__load-more {
   display: block;
   margin: 0 auto;
-  padding: 16px 43px 15px 33px;
+  padding: 16px 43px 14px 33px;
 }
 @media (min-width: 1300px) {
   .catalog {
     padding-top: 55px;
+    padding-bottom: 61px;
   }
   .catalog__title {
     font-size: 28px;
@@ -826,17 +830,26 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-}
-.page-footer__social {
-  padding-top: 23px;
-  padding-bottom: 17px;
 }
 .page-footer__contacts {
   padding-bottom: 8px;
+}
+@media (min-width: 1300px) {
+  .page-footer__submenu {
+    padding: 0;
+    margin: 0;
+    padding-top: 23px;
+    padding-right: 79px;
+  }
+  .page-footer__social {
+    padding-top: 23px;
+    padding-bottom: 17px;
+  }
+  .page-footer__credentials {
+    margin-left: auto;
+    padding-top: 25px;
+  }
 }
 .page-header {
   padding-top: 27px;
@@ -914,6 +927,11 @@ body {
 .social__link--instagram {
   background-image: url("../img/insta.png");
 }
+@media (min-width: 1300px) {
+  .social__be-with-us {
+    text-align: left;
+  }
+}
 @media (max-width: 1300px) {
   .submenu {
     position: absolute;
@@ -921,5 +939,19 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;
+  }
+}
+@media (min-width: 1300px) {
+  .submenu {
+    list-style: none;
+  }
+  .submenu__item {
+    padding-bottom: 5px;
+  }
+  .submenu__link {
+    color: #0d3351;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
   }
 }
