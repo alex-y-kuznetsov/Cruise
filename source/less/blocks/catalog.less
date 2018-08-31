@@ -31,8 +31,21 @@
     display: block;
     margin: 0 auto;
     padding: 16px 43px 14px 33px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: 26px;
+      top: 21px;
+      border-style: solid;
+      border-width: 5px 4px 0 4px;
+      border-color: #ffffff transparent transparent transparent;
+    }
   }
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     padding-top: 55px;
     padding-bottom: 61px;
 
@@ -41,6 +54,18 @@
     }
     &__sort {
       padding-bottom: 31px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 112px;
+
+    &__title {
+      font-size: 39px;
+      font-weight: 400;
+      padding-bottom: 9px;
+    }
+    &__sort {
+      padding-bottom: 38px;
     }
   }
 }

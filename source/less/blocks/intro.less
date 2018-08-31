@@ -82,6 +82,27 @@
       }
     }
   }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 195px;
+
+    &__header {
+      font-size: 97px;
+      width: 1005px;
+      font-weight: 400;
+      padding-top: 66px;
+      padding-bottom: 73px;
+
+      &--small {
+        font-size: 39px;
+        padding-bottom: 74px;
+      }
+    }
+    &__to-cruises {
+      &::after {
+        background-image: url("../img/tracks-desktop.svg");
+      }
+    }
+  }
 }
 
 
