@@ -705,6 +705,10 @@ body {
 @media (min-width: 1670px) {
   .intro {
     background-image: url("../img/logo.png"), url("../img/intro-background-desktop.jpg");
+    background-position: center 80px,
+      center bottom;
+    background-size: 90px,
+      cover;
   }
 }
 .intro__wrapper {
@@ -933,6 +937,12 @@ body {
 }
 .page-footer__contacts {
   padding-bottom: 8px;
+}
+@media (max-width: 1300px) {
+  .page-footer__social {
+    padding-top: 25px;
+    padding-bottom: 16px;
+  }
 }
 @media (min-width: 1300px) {
   .page-footer__submenu {
