@@ -401,11 +401,14 @@ body {
   font-size: 14px;
   line-height: 18px;
   padding-top: 27px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .catalog-item__label::after {
   content: "";
-  position: relative;
-  bottom: -5px;
+  position: absolute;
+  right: 0;
+  bottom: -17px;
   width: 0;
   height: 0;
   border-width: 5px 45px 15px;
@@ -790,6 +793,8 @@ body {
   }
   .intro__to-cruises::after {
     background-image: url("../img/tracks-desktop.svg");
+    width: 70px;
+    height: 225px;
   }
 }
 .login input {
