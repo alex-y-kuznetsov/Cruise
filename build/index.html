@@ -18,8 +18,11 @@
           <li class="menu-options__item">
             <form class="login" action="#" method="post">
               <a href="#" class="login__dropdown">Личный кабинет</a>
-              <input type="text" placeholder="Пароль" name="password-field">
-              <input type="submit" value="Войти" name="login-button">
+              <div class="login__fields login__fields--hidden">
+                <input class="login__field" type="login" placeholder="Логин" name="login-field">
+                <input class="login__field" type="password" placeholder="Пароль" name="password-field">
+                <input class="login__field login__field--submit" type="submit" value="Войти" name="login-button">
+              </div>
             </form>
           </li>
           <li class="menu-options__item">
