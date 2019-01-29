@@ -11,3 +11,5 @@
 
   loginOpener.addEventListener('click', openLoginHandler);
 })();
+
+console.log("test");
