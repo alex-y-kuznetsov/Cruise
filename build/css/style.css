@@ -1036,6 +1036,12 @@ body {
     margin-left: auto;
   }
 }
+@media (min-width: 320px) {
+  .page-header__wrapper {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
 .social__be-with-us {
   font-size: 15px;
   line-height: 24px;
